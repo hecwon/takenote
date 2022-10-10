@@ -1,18 +1,11 @@
 import React from 'react';
 
-const Note = () => {
+const Note = ({each}) => {
   return(
     <div className="noteView">
-          <div className="noteViewTitle">
-            <h1>My Note Title</h1>
-          </div>
-          <div className="noteViewCategory">
-            <h3>Category</h3>
-          </div>
+      {each.note}
     </div>
   )
-
-
 };
 
-export default Notes;
+export default Note;
